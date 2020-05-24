@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "tp-webservice"
+    }
+  },
+  "defaultProject": "tp-webservice",
+  "cli": {
+    "analytics": false
+  }
 }
