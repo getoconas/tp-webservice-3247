@@ -1,1 +1,120 @@
-<p>divisas works!</p>
+<div class="container-fluid">
+  <div class="row">
+    <!-- Divisas -->
+    <div class="col-md-8 d-none d-md-block">
+      <table class="table table-borderless mt-3">
+        <thead class="borde-table table-primary ">
+          <tr class="color-card">
+            <th scope="col"></th>
+            <th scope="col">ARS</th>
+            <th scope="col">USD</th>
+            <th scope="col">EUR</th>
+            <th scope="col">CNY</th>
+          </tr>
+        </thead>
+        <tbody class="table-dark">
+          <tr>
+            <th scope="row">1 ARS</th>
+            <td>1.00</td>
+            <td>0.01</td>
+            <td>0.01</td>
+            <td>0.11</td>
+          </tr>
+          <tr >
+            <th scope="row">Inversa</th>
+            <td>1.00</td>
+            <td>65.50</td>
+            <td>71.50</td>
+            <td>9.40</td>
+          </tr>
+          <tr>
+            <th scope="row">1 USD</th>
+            <td>64.50</td>
+            <td>1.00</td>
+            <td>0.92</td>
+            <td>7.09</td>
+          </tr>
+          <tr>
+            <th scope="row">Inversa</th>
+            <td>0.01</td>
+            <td>1.00</td>
+            <td>1.08</td>
+            <td>0.14</td>
+          </tr>
+          <tr>
+            <th scope="row">1 EUR</th>
+            <td>70.00</td>
+            <td>1.08</td>
+            <td>1.00</td>
+            <td>7.67</td>
+          </tr>
+          <tr >
+            <th scope="row">Inversa</th>
+            <td>0.01</td>
+            <td>0.92</td>
+            <td>1.00</td>
+            <td>0.13</td>
+          </tr>
+          <tr>
+            <th scope="row">1 CNY</th>
+            <td>9.40</td>
+            <td>0.14</td>
+            <td>0.13</td>
+            <td>1.00</td>
+          </tr>
+          <tr >
+            <th scope="row">Inversa</th>
+            <td>0.11</td>
+            <td>7.09</td>
+            <td>7.67</td>
+            <td>1.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Formulario -->
+    <div class="col-md-4 col-sm-12 mt-3">
+      <div class="card">
+        <div class="card-header text-center color-card">
+          <h3>Conversor de Divisas</h3>
+        </div>
+        <div class="card-body bg-primary color-card-content">
+          <form action="">
+            <div class="form-group">
+              <label for="cantidad">Cantidad</label>
+              <input type="number" class="form-control" placeholder="Ingrese cantidad" id="cantidad" step="0.01"
+                min="0.01">
+            </div>
+
+            <div class="form-group">
+              <label for="cantidad">De</label>
+              <select class="form-control">
+                <option>Peso Argentino</option>
+                <option>Dolar Estadounidense</option>
+                <option>Euro</option>
+                <option>Yuan</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="cantidad">A</label>
+              <select class="form-control">
+                <option>Peso Argentino</option>
+                <option>Dolar Estadounidense</option>
+                <option>Euro</option>
+                <option>Yuan</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="cantidad">Total</label>
+              <input type="number" disabled class="form-control" placeholder="" id="cantidad" step="0.01" min="0.01">
+            </div>
+
+            <button type="submit" class="btn btn-warning text-center col-12">Convertir</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

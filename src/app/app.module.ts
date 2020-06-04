@@ -10,6 +10,10 @@ import { CovidComponent } from './components/covid/covid.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+import { NgxDataTableModule } from 'angular-9-datatable';
 
 //routes
 import { app_routing } from './app.routes';
@@ -27,7 +31,10 @@ import { app_routing } from './app.routes';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    app_routing
+    FormsModule,
+    app_routing,
+    HttpClientModule,
+    NgxDataTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
