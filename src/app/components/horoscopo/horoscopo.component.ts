@@ -26,7 +26,7 @@ export class HoroscopoComponent implements OnInit {
   }
 
   public cargarDatos(result) {
-    this.informacion = result['description'];
+    this.informacion = result['description']
     this.numeroSuerte = result['lucky_number'];
     this.rangoFechas = result['date_range'];
   }
