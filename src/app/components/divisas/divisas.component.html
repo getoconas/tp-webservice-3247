@@ -10,6 +10,7 @@
             <th scope="col">USD</th>
             <th scope="col">EUR</th>
             <th scope="col">CNY</th>
+            <th scope="col">GBP</th>
           </tr>
         </thead>
         <tbody class="table-dark">
@@ -19,6 +20,7 @@
             <td>0.01</td>
             <td>0.01</td>
             <td>0.11</td>
+            <td>0.01</td>
           </tr>
           <tr >
             <th scope="row">Inversa</th>
@@ -26,6 +28,7 @@
             <td>65.50</td>
             <td>71.50</td>
             <td>9.40</td>
+            <td>87.50</td>
           </tr>
           <tr>
             <th scope="row">1 USD</th>
@@ -33,6 +36,7 @@
             <td>1.00</td>
             <td>0.92</td>
             <td>7.09</td>
+            <td>0.79</td>
           </tr>
           <tr>
             <th scope="row">Inversa</th>
@@ -40,6 +44,7 @@
             <td>1.00</td>
             <td>1.08</td>
             <td>0.14</td>
+            <td>1.27</td>
           </tr>
           <tr>
             <th scope="row">1 EUR</th>
@@ -47,6 +52,7 @@
             <td>1.08</td>
             <td>1.00</td>
             <td>7.67</td>
+            <td>0.89</td>
           </tr>
           <tr >
             <th scope="row">Inversa</th>
@@ -54,6 +60,7 @@
             <td>0.92</td>
             <td>1.00</td>
             <td>0.13</td>
+            <td>1.12</td>
           </tr>
           <tr>
             <th scope="row">1 CNY</th>
@@ -61,12 +68,30 @@
             <td>0.14</td>
             <td>0.13</td>
             <td>1.00</td>
+            <td>0.11</td>
           </tr>
           <tr >
             <th scope="row">Inversa</th>
             <td>0.11</td>
             <td>7.09</td>
             <td>7.67</td>
+            <td>1.00</td>
+            <td>8.95</td>
+          </tr>
+          <tr>
+            <th scope="row">1 GBP</th>
+            <td>87</td>
+            <td>1.27</td>
+            <td>1.12</td>
+            <td>8.95</td>
+            <td>1.00</td>
+          </tr>
+          <tr >
+            <th scope="row">Inversa</th>
+            <td>0.01</td>
+            <td>0.79</td>
+            <td>0.89</td>
+            <td>0.11</td>
             <td>1.00</td>
           </tr>
         </tbody>
@@ -100,6 +125,7 @@
                 <option value="USD">Dolar Estadounidense</option>
                 <option value="EUR">Euro</option>
                 <option value="CNY">Yuan</option>
+                <option value="GBP">Libra Esterlina</option>
               </select>
               <div *ngIf="cmbDe.invalid && (cmbDe.dirty || cmbDe.touched)" class="alert alert-danger">
                 <div *ngIf="cmbDe.errors.required">
@@ -115,6 +141,7 @@
                 <option value="USD">Dolar Estadounidense</option>
                 <option value="EUR">Euro</option>
                 <option value="CNY">Yuan</option>
+                <option value="GBP">Libra Esterlina</option>
               </select>
               <div *ngIf="cmbA.invalid && (cmbA.dirty || cmbA.touched)" class="alert alert-danger">
                 <div *ngIf="cmbA.errors.required">

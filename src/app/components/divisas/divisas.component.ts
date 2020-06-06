@@ -10,19 +10,16 @@ import { Moneda } from 'src/app/models/moneda';
 export class DivisasComponent implements OnInit {
   moneda: Moneda;
   total: number = 0;
-  tipo: string;
+  tipo: string = '';
 
   constructor(private exchangeService: ExchangeService) {
     this.moneda = new Moneda();
-    //this.obtenerConversion();
   }
 
   public obtenerConversion() {
     
-    /*this.exchangeService.obtenerConversion("ARS", "1000", "USD")*/
     this.exchangeService.obtenerConversion(this.moneda.from_type, this.moneda.from_value, this.moneda.to_type).subscribe(
       (result) => {
-        console.log(result);
         this.tipo = result["to-type"];
         this.total = Math.round(result["result-float"]);
       },

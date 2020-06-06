@@ -9,9 +9,7 @@ Observable
 })
 export class ExchangeService {
 
-  constructor(private _http: HttpClient) { 
-
-  }
+  constructor(private _http: HttpClient) { }
 
   public obtenerConversion(fromType: string, fromValue: string, toType: string): Observable<any> {
     const httpOptions = {
