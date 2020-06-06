@@ -21,14 +21,12 @@ export class CovidComponent implements OnInit {
   public listarCasosCovid() {
     this.covidService.obtenerListadoCovid().subscribe(
       (result) => {
-        //console.log(result['countries_stat']);
         this._covidArray = new Array<Covid>();
         result['countries_stat'].forEach(element => {
           this._covid = new Covid();
           Object.assign(this._covid, element);
           this._covidArray.push(this._covid);
         });
-        console.log(this._covidArray);
       },
       error => {
         alert("Error en la petición");
